@@ -1,0 +1,10 @@
+[
+    {
+        "id": 0,
+        "name": "Отзыв 1",
+        "url": "/feedbacks/feedback.png",
+        "preview": "/feedbacks/previews/feedback.png",
+        "extension": "png",
+        "status": "success"
+    }
+]

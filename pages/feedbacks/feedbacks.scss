@@ -1,0 +1,22 @@
+@use '@/assets/variables.scss' as variables;
+@use '@/assets/mixins.scss' as mixins;
+
+.feedbacks {
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .feedbacks__field {
+        &.file {
+            .file-list {
+                .file-list__item {
+                    &.fancybox-item {
+                        .fancybox-item__img {
+                            @include mixins.elemResolutionOptions(200px, 320px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
