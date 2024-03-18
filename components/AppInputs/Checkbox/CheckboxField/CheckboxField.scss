@@ -35,8 +35,8 @@
             &+label {
                 position: relative;
                 @include mixins.gridCenter();
-                background: variables.$color-blue;
-                border: 1px solid variables.$color-blue;
+                background: variables.$color-local-red;
+                border: 1px solid variables.$color-local-red;
 
                 svg {
                     display: block;

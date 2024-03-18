@@ -29,7 +29,7 @@
             </NuxtLink>
 
             <nav class="header__links">
-                <NuxtLink class="header__link header__link_active" :to="'/'">
+                <NuxtLink class="header__link" :to="'/'">
                     <span class="header__link-text">
                         Главная
                     </span>

@@ -203,7 +203,7 @@ input, textarea {
     @include mixins.borderOptions(1px, solid,  variables.$color-grey, 5px);
 
     &:focus {
-        border: 1px solid variables.$color-blue
+        border: 1px solid variables.$color-local-red;
     }
 
     &::-webkit-credentials-destruction-view-button {
@@ -258,7 +258,7 @@ details {
 
     &[open] {
         summary {
-            border-color: variables.$color-blue;
+            border-color: variables.$color-local-red;
 
             svg {
                 transform: rotate(180deg);

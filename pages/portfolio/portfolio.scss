@@ -1,0 +1,39 @@
+@use '@/assets/variables.scss' as variables;
+@use '@/assets/mixins.scss' as mixins;
+
+.portfolio__list {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio__field {
+    .form-item__title {
+        font-size: 24px;
+        font-weight: 500;
+        position: relative;
+        width: max-content;
+        margin-bottom: 15px;
+
+        &::after {
+            content: '';
+            margin-top: 2px;
+            display: block;
+            width: calc(100% + 40px);
+            border-bottom: 2px solid variables.$color-local-red;
+        }
+    }
+
+
+    &.file {
+        .file-list {
+            .file-list__item {
+                &.fancybox-item {
+                    .fancybox-item__img {
+                        @include mixins.elemResolutionOptions(200px, 200px);
+                    }
+                }
+            }
+        }
+    }
+}

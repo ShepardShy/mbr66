@@ -1,0 +1,83 @@
+@use '@/assets/variables.scss' as variables;
+@use '@/assets/mixins.scss' as mixins;
+
+.vacancy {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.vacancy__header {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.vacancy__title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.vacancy__price {
+    font-size: 20px;
+}
+.vacancy__description {
+    width: 50%;
+}
+
+.vacancy__footer {
+    gap: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.vacancy__details {
+    &[open] {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .vacancy-detail__summary {
+            display: none;
+        }
+    }
+}
+
+.vacancy-detail__subtitle {
+    font-weight: 500;
+    margin: 10px 0px 15px;
+}
+
+.vacancy-detail__summary,
+.vacancy-detail__close {
+    color: variables.$color-local-red;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.vacancy-detail__close {
+    color: variables.$color-dark-grey;
+    width: max-content;
+}
+
+.vacancy-detail__list {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.vacancy-detail__item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    &::before {
+        content: url('/icons/red-success.svg');
+    }
+}
+.vacancy__link {
+}

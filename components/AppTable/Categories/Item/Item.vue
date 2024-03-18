@@ -42,7 +42,7 @@
     import IconTriangle from '@/components/AppIcons/Triangle/Triangle.vue';
 
     import ItemDetails from '../Details/Details.vue'
-    import CategoryItem from "./ItemCopy/ItemCopy.vue";
+    import CategoryItem from "./ItemCopy/Item.vue";
 
     const props = defineProps({
         item: {

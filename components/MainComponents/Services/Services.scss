@@ -1,0 +1,44 @@
+@use '@/assets/variables.scss' as variables;
+@use '@/assets/mixins.scss' as mixins;
+
+.main-services {
+    margin-top: 170px;
+
+    h2 {
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+}
+
+.main-services__list {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+
+    .card {
+        &:hover {
+            background: variables.$color-local-red;
+
+            * {
+                color: variables.$color-white;
+            }
+
+            .card__button {
+                background: variables.$color-white;
+
+                span {
+                    color: variables.$color-black;
+                }
+
+                &:hover {
+                    border: 1px solid variables.$color-local-red;
+
+                    span {
+                        color: variables.$color-local-red;
+                    }
+                }
+            }
+        }
+    }
+}

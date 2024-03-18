@@ -1,5 +1,5 @@
 <template>
-    <section ref="sectionRef">
+    <section class="section" ref="sectionRef">
         <slot></slot>
     </section>
 </template>

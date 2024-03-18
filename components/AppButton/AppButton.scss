@@ -3,27 +3,29 @@
 
 button {
     font-size: variables.$font-size-default;
-    transition: 0.2s;
+    transition: 0.1s;
     padding: 10px 15px;
     border-radius: 5px;
-    background: #F0F0F0;
+    border: 1px solid variables.$color-black;
+    background: transparent;
     outline: none;
 
     &:disabled {
         cursor: not-allowed;
 
         &.button_blue {
-            background: variables.$color-blue;
+            border: 1px solid variables.$color-blue;
         }
     }
 
     &:hover {
-        filter: brightness(0.95)
+        color: variables.$color-local-red;
+        border: 1px solid variables.$color-local-red;
     }
 
     &.button_blue {
-        background: variables.$color-blue;
-        color: variables.$color-white;
+            border: 1px solid variables.$color-blue;
+            color: variables.$color-white;
 
         svg {
             * {
@@ -33,13 +35,12 @@ button {
     }
 
     &.button_white {
-        background: variables.$color-white;
-        border: 1px solid variables.$color-light-grey;
+        border: 1px solid variables.$color-white;
         box-shadow: 0 5px 20px variables.$color-light-grey;
     }
 
     &.button_orange {
-        background: variables.$color-orange;
+        border: 1px solid variables.$color-orange;
         color: variables.$color-white;
 
         &.button_loading  {
@@ -65,8 +66,8 @@ button {
     }
 
     &.button_red {
-        background: variables.$color-red;;
-        color: variables.$color-white;
+        color: variables.$color-local-red;
+        border: 1px solid variables.$color-local-red;
 
         svg {
             path {

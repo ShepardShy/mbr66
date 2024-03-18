@@ -37,7 +37,7 @@
     &[open] {
         input[disabled] {
             opacity: 1;
-            @include mixins.borderOptions(1px, solid, variables.$color-blue, 5px);
+            @include mixins.borderOptions(1px, solid, variables.$color-local-red, 5px);
         }
 
         .form-item__substring {
@@ -52,7 +52,7 @@
 
         &.select__popup_multiply {
             .popup__summary {
-                @include mixins.borderOptions(1px, solid, variables.$color-blue, 5px);
+                @include mixins.borderOptions(1px, solid, variables.$color-local-red, 5px);
             }
 
             .select__active-option {

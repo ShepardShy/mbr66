@@ -2,10 +2,6 @@
 @use '@/assets/mixins.scss' as mixins;
 
 .feedbacks {
-    h1 {
-        margin-bottom: 30px;
-    }
-
     .feedbacks__field {
         &.file {
             .file-list {

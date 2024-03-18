@@ -48,7 +48,7 @@
         }
 
         .dp__overlay_cell_active, .dp__active_date {
-            background: variables.$color-blue;
+            background: variables.$color-local-red;
         }
 
         .dp__inner_nav  {
@@ -70,7 +70,7 @@
             padding: 7px 15px;
 
             &.dp__input_focus {
-                border: 1px solid variables.$color-blue;
+                border: 1px solid variables.$color-local-red;
             }
         }
     
