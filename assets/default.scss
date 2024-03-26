@@ -46,7 +46,9 @@ body {
     color: variables.$color-black;
     font-family: Montserrat;
     overflow-x: hidden;
-
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    
     &.body_uncscroll {
         overflow: hidden;
     }
@@ -526,5 +528,17 @@ summary {
                 fill: variables.$color-grey;
             }
         }
+    }
+}
+
+@media (max-width: 1430px) {
+    .container {
+        width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .main {
+        margin-bottom: 50px;
     }
 }

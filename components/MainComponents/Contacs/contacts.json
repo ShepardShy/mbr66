@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "title": "Адрес",
+        "description": "г. Екатеринбург, пер. Черниговский 23",
+        "isLink": false,
+        "link": "",
+        "schema": {
+            "itemprop": "address"
+        }
+    },
+    {
+        "id": 1,
+        "title": "Телефон",
+        "description": "+7 (343) 345-91-20",
+        "isLink": true,
+        "link": "tel:+73433459120",
+        "schema": {
+            "itemprop": "telephone"
+        }
+    },
+    {
+        "id": 2,
+        "title": "Электронная почта",
+        "description": "mbr66.ru@yandex.ru",
+        "isLink": true,
+        "link": "mailto:mbr66.ru@yandex.ru",
+        "schema": {
+            "itemprop": "email"
+        }
+    }
+]

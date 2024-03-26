@@ -19,6 +19,7 @@ button {
     }
 
     &:hover {
+        transition: 0.2s all;
         color: variables.$color-local-red;
         border: 1px solid variables.$color-local-red;
     }
@@ -37,6 +38,12 @@ button {
     &.button_white {
         border: 1px solid variables.$color-white;
         box-shadow: 0 5px 20px variables.$color-light-grey;
+
+        &:hover {
+            color: variables.$color-local-red;
+            border: 1px solid variables.$color-white;
+            background: variables.$color-white;
+        }
     }
 
     &.button_orange {
@@ -73,6 +80,12 @@ button {
             path {
                 fill: variables.$color-white
             }
+        }
+
+        &:hover {
+            color: variables.$color-white;
+            border: 1px solid variables.$color-white;
+            background: variables.$color-local-red;
         }
     }
 

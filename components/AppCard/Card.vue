@@ -1,18 +1,21 @@
 <template>
-    <div class="card">
-        <figure class='ibg card__image'>
+    <div class="card" itemscope itemtype="https://schema.org/Product">
+        <figure class='ibg card__image' itemprop="image">
             <img :src="props.card.preview" :alt="props.card.title">
         </figure>
 
-        <div class="card__title">
+        <div class="card__title" itemprop="name">
             {{ props.card.title }}
         </div>
 
-        <div class="card__price">
-            от {{ tranformPrice }} руб.
+        <div class="card__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="RUB" />
+            <span class="card__price-text" itemprop="price">
+                от {{ tranformPrice }} руб.
+            </span>
         </div>
 
-        <NuxtLink :to="`/${props.parentPage}/${props.card.id}`" v-if="props.isLink">
+        <NuxtLink :to="`/${props.parentPage}/${props.card.id}`" v-if="props.isLink" itemprop="url">
             <AppButton class="card__button">
                 Подробнее
             </AppButton>

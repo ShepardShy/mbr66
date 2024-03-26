@@ -54,3 +54,24 @@
         width: 100% !important;
     }
 }
+
+@media (max-width: 1200px) {
+    .about {
+        .container {
+            grid-gap: 30px;
+            grid-template-columns: 1fr;
+
+            h1 {
+                grid-column: 1/2;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .about__title {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+}

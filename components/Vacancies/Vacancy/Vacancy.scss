@@ -32,6 +32,8 @@
 }
 
 .vacancy__details {
+    width: 100%;
+    
     &[open] {
         display: flex;
         flex-direction: column-reverse;
@@ -80,4 +82,27 @@
     }
 }
 .vacancy__link {
+}
+
+
+@media (max-width: 920px) {
+    .vacancy__description {
+        width: 70%;
+    }
+}
+
+@media (max-width: 620px) {
+    .vacancy__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vacancy__description {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .vacancy__footer {
+        flex-direction: column;   
+    }
 }

@@ -2,5 +2,7 @@
 @use '@/assets/mixins.scss' as mixins;
 
 h2 {
-    font-size: variables.$font-size-h2;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 50px;
 }

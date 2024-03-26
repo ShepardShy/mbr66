@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "icon": "/icons/steps/doc.svg",
+        "title": "Оставьте заявку на сайте или свяжитесь с нами по телефону.",
+        "class": ""
+    },
+    {
+        "id": 1,
+        "icon": "/icons/steps/plane.svg",
+        "title": "Специалисты проведут диагностику вашей техники и выявят проблему",
+        "class": ""
+    },
+    {
+        "id": 2,
+        "icon": "/icons/steps/key.svg",
+        "title": "Мастера приступят к ремонтным работам",
+        "class": "steps-section__item_down"
+    },
+    {
+        "id": 3,
+        "icon": "/icons/steps/ruble.svg",
+        "title": "Оплата выполненной работы и выдача гарантийного талона",
+        "class": "steps-section__item_down"
+    }
+]

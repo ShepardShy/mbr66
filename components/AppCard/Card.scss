@@ -9,6 +9,31 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    &:hover {
+        transition: 0.2s all;
+        background: variables.$color-local-red;
+
+        * {
+            color: variables.$color-white;
+        }
+
+        .card__button {
+            background: variables.$color-white;
+
+            span {
+                color: variables.$color-black;
+            }
+
+            &:hover {
+                border: 1px solid variables.$color-local-red;
+
+                span {
+                    color: variables.$color-local-red;
+                }
+            }
+        }
+    }
 }
 .card__image {
     @include mixins.elemResolutionOptions(100%, 160px);

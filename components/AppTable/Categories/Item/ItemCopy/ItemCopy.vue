@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-    import './Item.scss';
+    import './ItemCopy.scss';
 
     import CategoryItem from "../Item.vue";
 

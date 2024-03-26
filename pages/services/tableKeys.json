@@ -3,7 +3,7 @@
         "id": 0,
         "title": "Название услуги",
         "key": "title",
-        "width": "720px",
+        "width": "40vw",
         "enabled": true,
         "sort_order": null,
         "type": "text",

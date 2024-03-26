@@ -1,0 +1,44 @@
+@use '@/assets/variables.scss' as variables;
+@use '@/assets/mixins.scss' as mixins;
+
+.slider {
+    .swiper-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .swiper-slide {
+        display: flex;
+    }
+
+    .swiper-slide-active {
+        justify-content: flex-end;
+    }
+
+    .swiper-slide-next {
+        justify-content: center;
+    }
+
+    .swiper-pagination-bullets-dynamic {
+        transform: translateX(-50%) scale(1.7) !important;
+    }
+
+    .swiper-button-next {
+        &::after {
+            color: variables.$color-local-red;
+        }
+    }
+
+    .swiper-button-prev {
+        &::after {
+            color: variables.$color-local-red;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        background: #F4AEA7;
+
+        &.swiper-pagination-bullet-active {
+            background: variables.$color-local-red;
+        }
+    }
+}

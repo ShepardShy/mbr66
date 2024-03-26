@@ -61,6 +61,8 @@
                 </NuxtLink>
             </nav>
         </header>
+
+        <HeaderMobile />
     </div>
 </template>
 
@@ -70,4 +72,6 @@
     import IconVK from '@/components/AppIcons/LocalIcons/VK.vue';
     import IconTelegram from '@/components/AppIcons/LocalIcons/Telegram.vue';
     import IconWhatsapp from '@/components/AppIcons/LocalIcons/Whatsapp.vue';
+
+    import HeaderMobile from './Mobile/Mobile.vue' 
 </script>

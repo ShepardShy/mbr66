@@ -8,7 +8,7 @@
                 v-for="service in services.slice(0, 6)"
                 :card="service"
                 :isLink="false"
-                @showMoreCard="(data) => showMoreCard(data)"
+                @showMoreCard="(data) => chooseService(data)"
             />
         </div>
     </section>
@@ -21,8 +21,14 @@
     import AppH2 from '@/components/AppHeaders/H2/H2.vue';
     import services from '@/pages/services/services.json'
 
-    const showMoreCard = (data) => {
-        console.log(data);
-    }
+    const emit = defineEmits([
+        'showMoreCard'
+    ])
 
+    // Выбрать услугу
+    const chooseService = (data) => {
+        const el = document.getElementById('contacts');
+        el.scrollIntoView();
+        emit('chooseService', data)
+    }
 </script>

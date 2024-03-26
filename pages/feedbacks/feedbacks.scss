@@ -5,6 +5,8 @@
     .feedbacks__field {
         &.file {
             .file-list {
+                justify-content: center;
+
                 .file-list__item {
                     &.fancybox-item {
                         .fancybox-item__img {

@@ -1,2 +1,39 @@
 @use '@/assets/variables.scss' as variables;
 @use '@/assets/mixins.scss' as mixins;
+
+.why-us-section {
+    margin-top: 100px;
+
+    h2 {
+        margin-bottom: 90px;
+    }
+}
+
+.why-us-section__list {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 100px 0px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 1100px) {
+    .why-us-section {
+        .why-us-section__list {
+            grid-gap: 80px 50px;
+            
+            .why-us-section__item {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .why-us-section {
+        .why-us-section__list {
+            grid-gap: 50px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

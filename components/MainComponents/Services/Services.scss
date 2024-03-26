@@ -3,42 +3,46 @@
 
 .main-services {
     margin-top: 170px;
-
-    h2 {
-        font-size: 35px;
-        font-weight: 600;
-        margin-bottom: 50px;
-    }
 }
 
 .main-services__list {
     display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(3, 1fr);
+}
 
-    .card {
-        &:hover {
-            background: variables.$color-local-red;
+@media (max-width: 1300px) {
+    .main-services {
+        margin-top: 120px;
+    }
+}
 
-            * {
-                color: variables.$color-white;
-            }
+@media (max-width: 1000px) {
+    .main-services__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-            .card__button {
-                background: variables.$color-white;
+@media (max-width: 930px) {
+    .main-services {
+        margin-top: 80px;
+    }
+}
 
-                span {
-                    color: variables.$color-black;
-                }
+@media (max-width: 630px) {
+    .main-services__list {
+        grid-template-columns: repeat(1, 1fr);
 
-                &:hover {
-                    border: 1px solid variables.$color-local-red;
+        .card__image {
+            height: 240px;
+        }
+    }
+}
 
-                    span {
-                        color: variables.$color-local-red;
-                    }
-                }
-            }
+@media (max-width: 450px) {
+    .main-services__list {
+        .card__image {
+            height: 160px;
         }
     }
 }

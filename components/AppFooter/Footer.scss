@@ -57,3 +57,25 @@
 }
 .footer__mail {
 }
+
+@media (max-width: 720px) {
+    .footer {
+        & > .container {
+            gap: 40px;
+            flex-direction: column-reverse;
+        }
+
+        .footer__group {
+            width: 100%;
+
+            * {
+                justify-content: center;
+                text-align: center;
+
+                figcaption {
+                    text-align: start;
+                }
+            }
+        }
+    }
+}
