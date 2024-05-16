@@ -83,9 +83,6 @@
         activeTab: null
     })    
 
-    const menuVisible = inject('menuVisible')
-    const menuHidden = inject('menuHidden')
-    const activeLink = inject('activeLink')
 
     // Вызов действий
     const callAction = (data) => {

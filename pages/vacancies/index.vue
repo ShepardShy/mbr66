@@ -12,7 +12,7 @@
 
         <div class="vacancies__list">
             <VacancyItem 
-                v-for="vacancy in vacancies"
+                v-for="vacancy in []"
                 :vacancy="vacancy"
             />
         </div>

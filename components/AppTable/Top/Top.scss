@@ -12,7 +12,10 @@
 }
 
 .table__title {
+    width: 100%;
+    white-space: nowrap;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .table-top__item {

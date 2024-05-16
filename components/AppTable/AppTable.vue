@@ -5,6 +5,10 @@
             @callAction="(data) => callAction(data)"
         />
 
+        <caption class="table__title">
+            {{ props.table.title }}
+        </caption>
+
         <AppSection 
             ref="sectionRef" 
             class="section__table table-template" 

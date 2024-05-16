@@ -93,6 +93,17 @@
             border-right: 1px solid #bcbcbc;
         }
     }
+    .table__item-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .table__item-subtitle {
+            font-size: 12px;
+            color: variables.$color-dark-grey;
+        }
+    }
+
 }
 
 .table__body {

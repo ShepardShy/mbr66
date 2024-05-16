@@ -18,33 +18,36 @@
 
         <div itemprop="description" class="services__description" v-html="activePage == null ? '' : activePage.description"></div>
 
-        <AppTable 
-            itemprop="description"
-            class="services__table"
-            :table="{
-                tableKeys: tableKeys,
-                tableData: activePage == null ? [] : activePage.services,
-                tableFooter: {
-                    pages: 1,
-                    activePage: 1,
-                    count: 25
-                },
-                loaderState: false,
-                sortItem: {
-                    key: 'id',
-                    order: 'desc'
-                },
-                socketRows: {
-                    header: [],
-                    body: []
-                },
-                title: null,
-            }"
-            :isTrash="false"
-            :isHaveCategories="false"
-            :slug="null"
-            :categories="null"
-        />
+        <div class="services__table-list">
+            <AppTable 
+                itemprop="description"
+                class="services__table"
+                v-for="table in activePage == null ? [] : activePage.services"
+                :table="{
+                    tableKeys: tableKeys,
+                    tableData: activePage == null ? [] : table.data,
+                    tableFooter: {
+                        pages: 1,
+                        activePage: 1,
+                        count: 25
+                    },
+                    loaderState: false,
+                    sortItem: {
+                        key: 'id',
+                        order: 'desc'
+                    },
+                    socketRows: {
+                        header: [],
+                        body: []
+                    },
+                    title: table.title,
+                }"
+                :isTrash="false"
+                :isHaveCategories="false"
+                :slug="null"
+                :categories="null"
+            />
+        </div>
     </AppMain>
 </template>
 

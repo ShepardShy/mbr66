@@ -6,12 +6,17 @@
         :class="setClasses" 
         @click="() => openLink()" 
     >
-        {{ props.value }}
+        {{ setValue }}
 
         <div class="form-item__substring" v-if="![null, undefined].includes(props.substring) && props.substring != ''">
             {{ props.substring }}
         </div>
     </span>
+
+
+
+
+
 </template>
 
 <script setup>
@@ -38,6 +43,14 @@
         substring: {
             default: null,
             type: String
+        }
+    })
+
+    const setValue = computed (() => {
+        if (typeof props.value == 'string') {
+            return props.value[0].toUpperCase() + props.value.slice(1).toLowerCase()
+        } else {
+            return props.value
         }
     })
 
