@@ -1,0 +1,1 @@
+import{o as a,c as e,a as c,h as n}from"./entry.1f11dde8.js";const r={class:"main"},_={class:"container"},p={__name:"AppMain",setup(t){return(s,o)=>(a(),e("main",r,[c("div",_,[n(s.$slots,"default")])]))}},m=p;const i={__name:"H1",setup(t){return(s,o)=>(a(),e("h1",null,[n(s.$slots,"default")]))}},u=i;export{m as A,u as a};

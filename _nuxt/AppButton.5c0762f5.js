@@ -1,0 +1,1 @@
+import{o as s,c as a,a as n,h as p}from"./entry.1f11dde8.js";const l=["disabled"],c={__name:"AppButton",props:{disabled:{default:!1,type:Boolean}},setup(e){const t=e;return(o,d)=>(s(),a("button",{disabled:t.disabled},[n("span",null,[p(o.$slots,"default")])],8,l))}},u=c;export{u as A};
